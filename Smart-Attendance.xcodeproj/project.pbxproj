@@ -14,6 +14,7 @@
 		D59DA95320372AA100477F08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59DA95120372AA100477F08 /* Main.storyboard */; };
 		D59DA95520372AA100477F08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D59DA95420372AA100477F08 /* Assets.xcassets */; };
 		D59DA95820372AA100477F08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59DA95620372AA100477F08 /* LaunchScreen.storyboard */; };
+		D5FE44002037984A001F29B1 /* RoleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE43FF2037984A001F29B1 /* RoleTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D59DA95420372AA100477F08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D59DA95720372AA100477F08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D59DA95920372AA100477F08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5FE43FF2037984A001F29B1 /* RoleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				D59DA94D20372AA100477F08 /* AppDelegate.swift */,
 				D59DA94F20372AA100477F08 /* ViewController.swift */,
 				D59DA95120372AA100477F08 /* Main.storyboard */,
+				D5FE43FF2037984A001F29B1 /* RoleTableViewController.swift */,
 				3997161F2037867400E1C5EF /* QRCodeGeneratorViewController.swift */,
 				D59DA95420372AA100477F08 /* Assets.xcassets */,
 				D59DA95620372AA100477F08 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 				094DEF3720379123006F9C4C /* LoginViewController.swift in Sources */,
 				D59DA95020372AA100477F08 /* ViewController.swift in Sources */,
 				D59DA94E20372AA100477F08 /* AppDelegate.swift in Sources */,
+				D5FE44002037984A001F29B1 /* RoleTableViewController.swift in Sources */,
 				399716202037867400E1C5EF /* QRCodeGeneratorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

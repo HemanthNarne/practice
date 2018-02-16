@@ -8,18 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
-    
-    let role:[String] = ["Faculty", "Student"]
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return role.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "role_cell")!
-        cell.textLabel?.text = role[indexPath.row]
-        return cell
-    }
+class ViewController: UIViewController {
+   
     
     @IBOutlet weak var roleTableView: UITableView!
     
