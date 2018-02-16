@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		094DEF3720379123006F9C4C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094DEF3620379123006F9C4C /* LoginViewController.swift */; };
 		399716202037867400E1C5EF /* QRCodeGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3997161F2037867400E1C5EF /* QRCodeGeneratorViewController.swift */; };
 		D59DA94E20372AA100477F08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DA94D20372AA100477F08 /* AppDelegate.swift */; };
 		D59DA95020372AA100477F08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DA94F20372AA100477F08 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		094DEF3620379123006F9C4C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3997161F2037867400E1C5EF /* QRCodeGeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGeneratorViewController.swift; sourceTree = "<group>"; };
 		D59DA94A20372AA100477F08 /* Smart-Attendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart-Attendance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59DA94D20372AA100477F08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 		D59DA94120372AA100477F08 = {
 			isa = PBXGroup;
 			children = (
+				094DEF3620379123006F9C4C /* LoginViewController.swift */,
 				D59DA94C20372AA100477F08 /* Smart-Attendance */,
 				D59DA94B20372AA100477F08 /* Products */,
 			);
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				094DEF3720379123006F9C4C /* LoginViewController.swift in Sources */,
 				D59DA95020372AA100477F08 /* ViewController.swift in Sources */,
 				D59DA94E20372AA100477F08 /* AppDelegate.swift in Sources */,
 				399716202037867400E1C5EF /* QRCodeGeneratorViewController.swift in Sources */,
