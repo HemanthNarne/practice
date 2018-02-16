@@ -35,6 +35,9 @@
                                 <rect key="frame" x="183" y="378" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="rQ2-93-bMP" kind="show" id="uFh-0X-NwW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -46,7 +49,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-825" y="-103"/>
+            <point key="canvasLocation" x="-554" y="-398"/>
         </scene>
         <!--Code Generator View Controller-->
         <scene sceneID="1Hp-i1-e20">
@@ -87,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="78t-Fc-IaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="93.599999999999994" y="-104.7976011994003"/>
+            <point key="canvasLocation" x="1167" y="-398"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vDY-TE-1Gs">
@@ -135,7 +138,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VYg-eF-7VA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="744.79999999999995" y="110.19490254872565"/>
+            <point key="canvasLocation" x="2052" y="-398"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Fx3-CY-6bO">
@@ -204,6 +207,9 @@
                                 <state key="normal" title="Next Page">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="8wQ-Zu-ehG" kind="show" id="oqn-MG-3qF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -212,7 +218,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jq3-f2-8Yu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1672.8" y="45.42728635682159"/>
+            <point key="canvasLocation" x="300" y="-398"/>
         </scene>
     </scenes>
 </document>

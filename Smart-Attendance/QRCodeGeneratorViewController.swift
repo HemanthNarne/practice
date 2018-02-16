@@ -33,7 +33,7 @@ class QRCodeGeneratorViewController: UIViewController {
         if let stringVal=inputSIDTF.text{
             let data = stringVal.data(using: .ascii, allowLossyConversion: false)
             let output=CIFilter(name: "CIQRCodeGenerator")
-            output?.setValue(data, forKey: "main input")
+            output?.setValue(data, forKey: "inputMessage")
             let img=UIImage(ciImage: (output?.outputImage)!)
             firstImageView.image=img
         }
