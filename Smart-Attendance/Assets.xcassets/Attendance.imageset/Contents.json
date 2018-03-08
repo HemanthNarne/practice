@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "maxresdefault.jpg",
+      "filename" : "Attendance.jpg",
       "scale" : "1x"
     },
     {
@@ -11,7 +11,6 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "cb3d15caa0d9026c517a2e23e4af0718.jpg",
       "scale" : "3x"
     }
   ],
