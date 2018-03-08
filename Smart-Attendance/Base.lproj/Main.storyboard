@@ -137,6 +137,14 @@
                                     <segue destination="rQ2-93-bMP" kind="show" id="gOO-Wg-7jP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZ5-Ks-UBB">
+                                <rect key="frame" x="242" y="563" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="touchid"/>
+                                <connections>
+                                    <action selector="touchValidationBTN:" destination="8wQ-Zu-ehG" eventType="touchUpInside" id="2DH-ZY-5bC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.75783453050000005" green="0.94693167099999997" blue="0.93618142879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="55O-e2-XUb"/>
@@ -207,7 +215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VYg-eF-7VA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-538.39999999999998" y="312.59370314842579"/>
+            <point key="canvasLocation" x="-634" y="358"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Fx3-CY-6bO">
@@ -297,6 +305,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="gOO-Wg-7jP"/>
-        <segue reference="OL7-VW-YZB"/>
+        <segue reference="mME-ta-mXn"/>
     </inferredMetricsTieBreakers>
 </document>

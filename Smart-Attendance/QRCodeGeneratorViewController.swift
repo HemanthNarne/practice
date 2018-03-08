@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LocalAuthentication
 
 class QRCodeGeneratorViewController: UIViewController {
 
@@ -40,6 +41,31 @@ class QRCodeGeneratorViewController: UIViewController {
     }
     
     
+    @IBAction func touchValidationBTN(_ sender: UIButton) {
+        
+        let authenticationContext = LAContext()
+        //        var error: NSError
+        print("in validation")
+        
+        if authenticationContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil) {
+            authenticationContext.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason: "We need your touch id", reply: { (wasSuccesful, error) in
+                if wasSuccesful {
+                    print("success")
+//                    if let stringVal=self.inputSIDTF.text{
+//                        let data = stringVal.data(using: .ascii, allowLossyConversion: false)
+//                        let output=CIFilter(name: "CIQRCodeGenerator")
+//                        output?.setValue(data, forKey: "inputMessage")
+//                        let img=UIImage(ciImage: (output?.outputImage)!)
+//                        self.firstImageView.image=img
+//                    }
+                }
+                else{
+                    print("touch id not authenticated")
+                }
+                
+            })
+        }
+    }
     /*
     // MARK: - Navigation
 
