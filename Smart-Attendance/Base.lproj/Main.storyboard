@@ -55,7 +55,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Attendance" translatesAutoresizingMaskIntoConstraints="NO" id="TLD-sH-2GI">
-                                <rect key="frame" x="45" y="356" width="285" height="210"/>
+                                <rect key="frame" x="52" y="368" width="285" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -299,7 +299,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="5ED-gp-exV">
-                                <rect key="frame" x="0.0" y="458" width="375" height="209"/>
+                                <rect key="frame" x="0.0" y="452" width="375" height="215"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -320,6 +320,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="uFh-0X-NwW"/>
-        <segue reference="mME-ta-mXn"/>
+        <segue reference="OL7-VW-YZB"/>
     </inferredMetricsTieBreakers>
 </document>
