@@ -11,6 +11,7 @@ import LocalAuthentication
 
 class QRCodeGeneratorViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
