@@ -30,6 +30,8 @@ class QRCodeGeneratorViewController: UIViewController {
     
     @IBOutlet weak var inputSIDTF: UITextField!
     
+    
+    
     @IBAction func convert(_ sender: Any) {
         
         if let stringVal=inputSIDTF.text{
