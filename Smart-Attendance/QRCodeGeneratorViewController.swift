@@ -71,6 +71,7 @@ class QRCodeGeneratorViewController: UIViewController {
             })
         }
     }
+ 
     /*
     // MARK: - Navigation
 
