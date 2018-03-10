@@ -54,8 +54,8 @@
                                 <color key="textColor" red="0.78240365932642486" green="0.44908234043455469" blue="0.030664868183424784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="TLD-sH-2GI">
-                                <rect key="frame" x="45" y="356" width="285" height="210"/>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Attendance" translatesAutoresizingMaskIntoConstraints="NO" id="TLD-sH-2GI">
+                                <rect key="frame" x="52" y="368" width="285" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -159,45 +159,30 @@
             </objects>
             <point key="canvasLocation" x="1165.5999999999999" y="-398.05097451274366"/>
         </scene>
-        <!--View Controller-->
+        <!--Reader View Controller-->
         <scene sceneID="vDY-TE-1Gs">
             <objects>
-                <viewController id="GsQ-pS-fJI" sceneMemberID="viewController">
+                <viewController id="GsQ-pS-fJI" customClass="QRReaderViewController" customModule="Smart_Attendance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ard-zY-1Rx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Smart Attendance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONl-zC-kgM">
-                                <rect key="frame" x="80" y="72" width="215" height="44"/>
+                                <rect key="frame" x="80" y="34" width="215" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <color key="textColor" red="0.7824036593" green="0.4490823404" blue="0.030664868179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Faculty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27u-yB-wPz">
-                                <rect key="frame" x="130" y="124" width="139" height="44"/>
+                                <rect key="frame" x="108" y="73" width="139" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldItalicMT" family="Times New Roman" pointSize="24"/>
                                 <color key="textColor" red="0.0030329864204626366" green="0.67341143573287299" blue="0.74097312176165797" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5f-bv-av7">
-                                <rect key="frame" x="91" y="286" width="191" height="168"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Scan QR code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnG-z0-Sbs">
-                                <rect key="frame" x="132" y="197" width="134" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldItalicMT" family="Times New Roman" pointSize="20"/>
-                                <color key="textColor" red="0.014574311041256404" green="0.095602145382619394" blue="0.11176496002958225" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ab-vH-ps1">
-                                <rect key="frame" x="142" y="520" width="90" height="35"/>
+                                <rect key="frame" x="132" y="556" width="90" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.83804242230000003" green="0.66068889689528387" blue="0.48115196572663538" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -208,14 +193,35 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="mME-ta-mXn"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ki" translatesAutoresizingMaskIntoConstraints="NO" id="h8k-qb-0OS">
+                                <rect key="frame" x="29" y="183" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="CSJ-LC-WqC"/>
+                                    <constraint firstAttribute="height" constant="320" id="sbQ-xg-V28"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Scan QR code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnG-z0-Sbs">
+                                <rect key="frame" x="108" y="113" width="134" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldItalicMT" family="Times New Roman" pointSize="20"/>
+                                <color key="textColor" red="0.014574311041256404" green="0.095602145382619394" blue="0.11176496002958225" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.94708377122879028" green="0.88826018062603551" blue="0.84675133221154575" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="h8k-qb-0OS" firstAttribute="centerX" secondItem="ard-zY-1Rx" secondAttribute="centerX" id="1HH-M9-SZ5"/>
+                            <constraint firstItem="h8k-qb-0OS" firstAttribute="centerY" secondItem="ard-zY-1Rx" secondAttribute="centerY" id="71m-tn-E65"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="c0G-tN-U5K"/>
                     </view>
+                    <connections>
+                        <outlet property="square" destination="h8k-qb-0OS" id="joG-Cj-0cm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VYg-eF-7VA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-634" y="358"/>
+            <point key="canvasLocation" x="-634.39999999999998" y="357.57121439280365"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Fx3-CY-6bO">
@@ -301,7 +307,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="296" height="200"/>
+        <image name="Attendance" width="890" height="602"/>
+        <image name="ki" width="300" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="uFh-0X-NwW"/>

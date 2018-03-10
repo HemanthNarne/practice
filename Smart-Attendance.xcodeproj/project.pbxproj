@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		094DEF3720379123006F9C4C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094DEF3620379123006F9C4C /* LoginViewController.swift */; };
 		399716202037867400E1C5EF /* QRCodeGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3997161F2037867400E1C5EF /* QRCodeGeneratorViewController.swift */; };
+		39E579EC2052FEF50094F172 /* QRReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E579EB2052FEF50094F172 /* QRReaderViewController.swift */; };
+		39ECE3D92053298B00F38A85 /* icons8-unchecked-checkbox-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 39ECE3D82053298B00F38A85 /* icons8-unchecked-checkbox-100.png */; };
 		3FDAF5792051012300D4958B /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDAF5782051012300D4958B /* LocalAuthentication.framework */; };
 		D59DA94E20372AA100477F08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DA94D20372AA100477F08 /* AppDelegate.swift */; };
 		D59DA95020372AA100477F08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DA94F20372AA100477F08 /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		094DEF3620379123006F9C4C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3997161F2037867400E1C5EF /* QRCodeGeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGeneratorViewController.swift; sourceTree = "<group>"; };
+		39E579EB2052FEF50094F172 /* QRReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRReaderViewController.swift; sourceTree = "<group>"; };
+		39ECE3D82053298B00F38A85 /* icons8-unchecked-checkbox-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-unchecked-checkbox-100.png"; path = "../../../Downloads/icons8-unchecked-checkbox-100.png"; sourceTree = "<group>"; };
 		3FDAF5782051012300D4958B /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		D59DA94A20372AA100477F08 /* Smart-Attendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart-Attendance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59DA94D20372AA100477F08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,11 +78,13 @@
 			isa = PBXGroup;
 			children = (
 				D59DA94D20372AA100477F08 /* AppDelegate.swift */,
+				39E579EB2052FEF50094F172 /* QRReaderViewController.swift */,
 				D59DA94F20372AA100477F08 /* ViewController.swift */,
 				D59DA95120372AA100477F08 /* Main.storyboard */,
 				D5FE43FF2037984A001F29B1 /* RoleTableViewController.swift */,
 				3997161F2037867400E1C5EF /* QRCodeGeneratorViewController.swift */,
 				D59DA95420372AA100477F08 /* Assets.xcassets */,
+				39ECE3D82053298B00F38A85 /* icons8-unchecked-checkbox-100.png */,
 				D59DA95620372AA100477F08 /* LaunchScreen.storyboard */,
 				D59DA95920372AA100477F08 /* Info.plist */,
 			);
@@ -147,6 +153,7 @@
 				D59DA95820372AA100477F08 /* LaunchScreen.storyboard in Resources */,
 				D59DA95520372AA100477F08 /* Assets.xcassets in Resources */,
 				D59DA95320372AA100477F08 /* Main.storyboard in Resources */,
+				39ECE3D92053298B00F38A85 /* icons8-unchecked-checkbox-100.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +166,7 @@
 			files = (
 				094DEF3720379123006F9C4C /* LoginViewController.swift in Sources */,
 				D59DA95020372AA100477F08 /* ViewController.swift in Sources */,
+				39E579EC2052FEF50094F172 /* QRReaderViewController.swift in Sources */,
 				D59DA94E20372AA100477F08 /* AppDelegate.swift in Sources */,
 				D5FE44002037984A001F29B1 /* RoleTableViewController.swift in Sources */,
 				399716202037867400E1C5EF /* QRCodeGeneratorViewController.swift in Sources */,
@@ -300,14 +308,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3MZ2LM332N;
+				DEVELOPMENT_TEAM = BD9CD55V6R;
 				INFOPLIST_FILE = "Smart-Attendance/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = sravathiBundle;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.nwmissouri.Smart-Attendance";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,14 +326,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3MZ2LM332N;
+				DEVELOPMENT_TEAM = BD9CD55V6R;
 				INFOPLIST_FILE = "Smart-Attendance/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = sravathiBundle;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.nwmissouri.Smart-Attendance";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

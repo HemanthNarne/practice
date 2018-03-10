@@ -11,6 +11,7 @@ import LocalAuthentication
 
 class QRCodeGeneratorViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,6 +29,7 @@ class QRCodeGeneratorViewController: UIViewController {
     
     
     @IBOutlet weak var inputSIDTF: UITextField!
+    
     
     @IBAction func convert(_ sender: Any) {
         
