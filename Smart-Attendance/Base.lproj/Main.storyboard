@@ -274,7 +274,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="8wQ-Zu-ehG" kind="show" id="ZbC-f9-Vdd"/>
+                                    <segue destination="8wQ-Zu-ehG" kind="show" identifier="submitId" id="ZbC-f9-Vdd"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNU-Jx-Ym0">
@@ -300,6 +300,10 @@
                         <color key="backgroundColor" red="0.75783453050000005" green="0.94693167099999997" blue="0.93618142879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="AQq-df-EWY"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTF" destination="rcO-EQ-CfK" id="neg-gY-beL"/>
+                        <outlet property="passwordTF" destination="kWT-dK-Dbx" id="Wiu-nf-bIN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jq3-f2-8Yu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -312,9 +316,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="uFh-0X-NwW"/>
-        <segue reference="mME-ta-mXn"/>
-        <segue reference="ZbC-f9-Vdd"/>
-        <segue reference="gOO-Wg-7jP"/>
         <segue reference="OL7-VW-YZB"/>
     </inferredMetricsTieBreakers>
 </document>

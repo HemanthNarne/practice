@@ -21,10 +21,14 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet weak var emailTF: UITextField!
+    
+    @IBOutlet weak var passwordTF: UITextField!
+    
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if identifier == "submitId"{
             
-            if(firstNameTF.text==""||lastNameTF.text==""||phoneNoTF.text==""||emailTF.text==""){
+            if(emailTF.text==""||passwordTF.text==""){
                 let alert = UIAlertController(title: title, message: "Please enter all Fields",preferredStyle: .alert) // actions, displayed as Buttons in the alert, specify both the title of the button                 // and what to do -- in the handler -- when the button is tapped)
                 alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action) in alert.dismiss(animated:true,completion:nil)
                     
