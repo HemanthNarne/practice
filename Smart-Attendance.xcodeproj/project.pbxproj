@@ -59,7 +59,6 @@
 		D59DA94120372AA100477F08 = {
 			isa = PBXGroup;
 			children = (
-				094DEF3620379123006F9C4C /* LoginViewController.swift */,
 				D59DA94C20372AA100477F08 /* Smart-Attendance */,
 				D59DA94B20372AA100477F08 /* Products */,
 				3FDAF5772051012300D4958B /* Frameworks */,
@@ -78,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				D59DA94D20372AA100477F08 /* AppDelegate.swift */,
+				094DEF3620379123006F9C4C /* LoginViewController.swift */,
 				39E579EB2052FEF50094F172 /* QRReaderViewController.swift */,
 				D59DA94F20372AA100477F08 /* ViewController.swift */,
 				D59DA95120372AA100477F08 /* Main.storyboard */,
