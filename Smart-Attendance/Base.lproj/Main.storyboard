@@ -96,6 +96,30 @@
             </objects>
             <point key="canvasLocation" x="356" y="269"/>
         </scene>
+        <!--Map Location View Locaion-->
+        <scene sceneID="qZX-6V-O7B">
+            <objects>
+                <viewController id="YY4-Kc-jGl" customClass="MapLocationViewLocaion" customModule="Smart_Attendance" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GLJ-kv-BqL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xdq-or-5oi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="438"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="j5L-nX-2xY"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="xdq-or-5oi" id="Lxl-uc-qLP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lfn-KG-heH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1260" y="331"/>
+        </scene>
         <!--Code Generator View Controller-->
         <scene sceneID="1Hp-i1-e20">
             <objects>
