@@ -47,6 +47,8 @@ class MapLocationViewLocaion: UIViewController,CLLocationManagerDelegate {
         print("The latitude is : \(location1.latitude)")
         print("The longitude is : \(location1.longitude)")
         
+        print(manager.startMonitoringSignificantLocationChanges())
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -46,6 +46,7 @@ class LoginViewController: UIViewController {
                                  block:{(user, error) -> Void in
                                     if error != nil{
                                         print(error)
+                                        self.displayNotOKAlert(title: "Login failed!", message:"Invalid credentials")
                                     }
                                     else {
                                         // Everything went alright here
@@ -60,7 +61,25 @@ class LoginViewController: UIViewController {
     message, preferredStyle: .alert)
     alert.addAction(UIAlertAction(title: "OK",
     style: .default, handler: nil))
-    self.present(alert, animated: true)
+        self.present(alert, animated: true)       
+        
+       let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        let mainStoryboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = mainStoryboard.instantiateViewController(withIdentifier: "QRCodeStoryBoard") as! QRCodeGeneratorViewController
+        appDelegate.window?.rootViewController = viewController
+    
+    }
+    
+    
+    func displayNotOKAlert(title: String, message: String) {
+        
+        let alert = UIAlertController(title: title, message:
+            message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK",
+                                      style: .default, handler: nil))
+        self.present(alert, animated: true)
+       
+        
     }
     
     

@@ -79,7 +79,7 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
                     attendance["Id"] = object.stringValue
                     attendance["starttime"] = NSDate()
                     if object.stringValue != nil {
-                        print("string is not null")
+                        
                     session.stopRunning()
                     }
                     
