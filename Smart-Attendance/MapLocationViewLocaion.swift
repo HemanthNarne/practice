@@ -10,7 +10,7 @@ import UIKit
 import CoreLocation
 import MapKit
 class MapLocationViewLocaion: UIViewController,CLLocationManagerDelegate {
-    var timeIntervalInSec :Double = 2.0
+    var timeIntervalInSec :Double = 120.0
     @IBOutlet weak var map: MKMapView!
     let manager = CLLocationManager()
     var location1 : CLLocationCoordinate2D = CLLocationCoordinate2D()
