@@ -13,6 +13,12 @@
 		3F268CE920707C63003DE6CC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F268CE820707C63003DE6CC /* CoreLocation.framework */; };
 		3F268CEB20707CF5003DE6CC /* MapLocationViewLocaion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F268CEA20707CF5003DE6CC /* MapLocationViewLocaion.swift */; };
 		3FDAF5792051012300D4958B /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDAF5782051012300D4958B /* LocalAuthentication.framework */; };
+		D53391AB2072B7E8007713CE /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D53391A92072B7E7007713CE /* Bolts.framework */; };
+		D53391AC2072B7E8007713CE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D53391AA2072B7E8007713CE /* Parse.framework */; };
+		D53391AE2072B83B007713CE /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D53391AD2072B83B007713CE /* libstdc++.6.tbd */; };
+		D53391B02072B84D007713CE /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D53391AF2072B84D007713CE /* libsqlite3.tbd */; };
+		D53391B22072B85B007713CE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D53391B12072B85B007713CE /* SystemConfiguration.framework */; };
+		D53391B42072B866007713CE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D53391B32072B865007713CE /* AudioToolbox.framework */; };
 		D59DA94E20372AA100477F08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DA94D20372AA100477F08 /* AppDelegate.swift */; };
 		D59DA95020372AA100477F08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DA94F20372AA100477F08 /* ViewController.swift */; };
 		D59DA95320372AA100477F08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59DA95120372AA100477F08 /* Main.storyboard */; };
@@ -28,6 +34,12 @@
 		3F268CE820707C63003DE6CC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		3F268CEA20707CF5003DE6CC /* MapLocationViewLocaion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationViewLocaion.swift; sourceTree = "<group>"; };
 		3FDAF5782051012300D4958B /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		D53391A92072B7E7007713CE /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		D53391AA2072B7E8007713CE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		D53391AD2072B83B007713CE /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		D53391AF2072B84D007713CE /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		D53391B12072B85B007713CE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D53391B32072B865007713CE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D59DA94A20372AA100477F08 /* Smart-Attendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart-Attendance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59DA94D20372AA100477F08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D59DA94F20372AA100477F08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,7 +55,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D53391B42072B866007713CE /* AudioToolbox.framework in Frameworks */,
+				D53391B22072B85B007713CE /* SystemConfiguration.framework in Frameworks */,
+				D53391B02072B84D007713CE /* libsqlite3.tbd in Frameworks */,
+				D53391AE2072B83B007713CE /* libstdc++.6.tbd in Frameworks */,
+				D53391AB2072B7E8007713CE /* Bolts.framework in Frameworks */,
 				3F268CE920707C63003DE6CC /* CoreLocation.framework in Frameworks */,
+				D53391AC2072B7E8007713CE /* Parse.framework in Frameworks */,
 				3FDAF5792051012300D4958B /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +72,12 @@
 		3FDAF5772051012300D4958B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D53391B32072B865007713CE /* AudioToolbox.framework */,
+				D53391B12072B85B007713CE /* SystemConfiguration.framework */,
+				D53391AF2072B84D007713CE /* libsqlite3.tbd */,
+				D53391AD2072B83B007713CE /* libstdc++.6.tbd */,
+				D53391A92072B7E7007713CE /* Bolts.framework */,
+				D53391AA2072B7E8007713CE /* Parse.framework */,
 				3F268CE820707C63003DE6CC /* CoreLocation.framework */,
 				3FDAF5782051012300D4958B /* LocalAuthentication.framework */,
 			);
@@ -313,6 +337,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3MZ2LM332N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Smart-Attendance/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -331,6 +359,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3MZ2LM332N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Smart-Attendance/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

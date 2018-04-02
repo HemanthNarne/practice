@@ -224,7 +224,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ki" translatesAutoresizingMaskIntoConstraints="NO" id="h8k-qb-0OS">
-                                <rect key="frame" x="36" y="199" width="302" height="301"/>
+                                <rect key="frame" x="36" y="176" width="316" height="304"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="CSJ-LC-WqC"/>
                                     <constraint firstAttribute="height" constant="320" id="sbQ-xg-V28"/>
@@ -251,7 +251,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VYg-eF-7VA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-634.39999999999998" y="357.57121439280365"/>
+            <point key="canvasLocation" x="-634.5" y="357.5"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Fx3-CY-6bO">

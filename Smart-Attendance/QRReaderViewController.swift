@@ -8,11 +8,12 @@
 
 import UIKit
 import AVFoundation
+import Parse
 
 class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
     var video=AVCaptureVideoPreviewLayer()
-    
+     let session=AVCaptureSession()
     @IBOutlet weak var square: UIImageView!
     
     override func viewDidLoad() {
@@ -21,7 +22,7 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
         //Detetcting the OR Codes
         
         //Creating a session
-        let session=AVCaptureSession()
+       
       
         //Define to capture video
         let captureDevice=AVCaptureDevice.default(for: AVMediaType.video)
@@ -32,6 +33,8 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
         do{
             //input for session
             let input=try AVCaptureDeviceInput(device: captureDevice!)
+            
+            print("input: ",input)
             session.addInput(input)
         }
         catch{
@@ -39,6 +42,7 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
         }
         //output comes out of the session
         let output=AVCaptureMetadataOutput()
+        print("output: ",output)
         session.addOutput(output)
         
         //define main queue where output is being processed
@@ -57,6 +61,7 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
         
         session.startRunning()
         
+        
        // let captureDevice=AVCaptureDevice.default(for: AVMediaType)
 
         // Do any additional setup after loading the view.
@@ -67,6 +72,29 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
             //to process furthur
             if let object=metadataObjects[0] as? AVMetadataMachineReadableCodeObject{
                 if object.type==AVMetadataObject.ObjectType.qr{
+                    
+                    print("scanned code is: ",object.stringValue as Any)
+                    
+                    let attendance = PFObject(className: "Attendance")
+                    attendance["Id"] = object.stringValue
+                    attendance["starttime"] = NSDate()
+                    if object.stringValue != nil {
+                        print("string is not null")
+                    session.stopRunning()
+                    }
+                    
+                    attendance.saveInBackground(block: { (success, error) -> Void in
+                        if success {
+                            
+                            self.displayOKAlert(title: "Success!", message:"record saved.")
+                           
+                        } else {
+                            print(error)
+                        }
+                    })
+                    
+                    print("before alert")
+                    
                     let alert=UIAlertController(title: "QR Code", message: object.stringValue, preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Retake", style: .default, handler: nil))
                     alert.addAction(UIAlertAction(title: "Attendance taken", style: .default, handler: {(nil) in
@@ -77,8 +105,19 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
                 
             }
         }
+        }
     }
+    
+    
+    func displayOKAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message:
+            message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK",
+                                      style: .default, handler: nil))
+        self.present(alert, animated: true)
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
