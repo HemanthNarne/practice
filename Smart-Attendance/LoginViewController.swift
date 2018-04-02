@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class LoginViewController: UIViewController {
 
@@ -38,6 +39,33 @@ class LoginViewController: UIViewController {
         }
         return true
     }
+    
+    
+    @IBAction func login(sender: AnyObject) {
+        PFUser.logInWithUsername(inBackground: emailTF.text!, password: passwordTF.text!,
+                                 block:{(user, error) -> Void in
+                                    if error != nil{
+                                        print(error)
+                                    }
+                                    else {
+                                        // Everything went alright here
+                                        self.displayOKAlert(title: "Success!", message:"Login successful")
+                                        
+                                    } })
+    }
+    
+    func displayOKAlert(title: String, message: String) {
+    
+    let alert = UIAlertController(title: title, message:
+    message, preferredStyle: .alert)
+    alert.addAction(UIAlertAction(title: "OK",
+    style: .default, handler: nil))
+    self.present(alert, animated: true)
+    }
+    
+    
+    
+    
     
 
     

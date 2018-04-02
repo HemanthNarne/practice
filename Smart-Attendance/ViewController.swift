@@ -24,6 +24,19 @@ class ViewController: UIViewController {
     }
 
     
-
+    @IBOutlet weak var SidTextView: UITextField!
+    
+    @IBOutlet weak var pwdTextView: UITextField!
+    
+    
+    @IBAction func signupBtn(_ sender: UIButton) {
+        
+        if !((SidTextView.text?.isEmpty)! || (pwdTextView.text?.isEmpty)!){
+            
+            let userId = SidTextView.text
+            let password = pwdTextView.text
+            print("signing up  \(userId) with pwd \(password)" )
+        }
+    }
 }
 

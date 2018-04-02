@@ -19,6 +19,7 @@
 		D53391B02072B84D007713CE /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D53391AF2072B84D007713CE /* libsqlite3.tbd */; };
 		D53391B22072B85B007713CE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D53391B12072B85B007713CE /* SystemConfiguration.framework */; };
 		D53391B42072B866007713CE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D53391B32072B865007713CE /* AudioToolbox.framework */; };
+		D53391B62072D3B0007713CE /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53391B52072D3B0007713CE /* SignupViewController.swift */; };
 		D59DA94E20372AA100477F08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DA94D20372AA100477F08 /* AppDelegate.swift */; };
 		D59DA95020372AA100477F08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DA94F20372AA100477F08 /* ViewController.swift */; };
 		D59DA95320372AA100477F08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59DA95120372AA100477F08 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		D53391AF2072B84D007713CE /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		D53391B12072B85B007713CE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D53391B32072B865007713CE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D53391B52072D3B0007713CE /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		D59DA94A20372AA100477F08 /* Smart-Attendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart-Attendance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59DA94D20372AA100477F08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D59DA94F20372AA100477F08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				094DEF3620379123006F9C4C /* LoginViewController.swift */,
 				39E579EB2052FEF50094F172 /* QRReaderViewController.swift */,
 				D59DA94F20372AA100477F08 /* ViewController.swift */,
+				D53391B52072D3B0007713CE /* SignupViewController.swift */,
 				D59DA95120372AA100477F08 /* Main.storyboard */,
 				D5FE43FF2037984A001F29B1 /* RoleTableViewController.swift */,
 				3997161F2037867400E1C5EF /* QRCodeGeneratorViewController.swift */,
@@ -193,6 +196,7 @@
 			files = (
 				094DEF3720379123006F9C4C /* LoginViewController.swift in Sources */,
 				D59DA95020372AA100477F08 /* ViewController.swift in Sources */,
+				D53391B62072D3B0007713CE /* SignupViewController.swift in Sources */,
 				39E579EC2052FEF50094F172 /* QRReaderViewController.swift in Sources */,
 				D59DA94E20372AA100477F08 /* AppDelegate.swift in Sources */,
 				D5FE44002037984A001F29B1 /* RoleTableViewController.swift in Sources */,
