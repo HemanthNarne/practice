@@ -10,10 +10,13 @@ import UIKit
 import CoreLocation
 import MapKit
 class MapLocationViewLocaion: UIViewController,CLLocationManagerDelegate {
-    var timeIntervalInSec :Double = 120.0
+    var timeIntervalInSec :Double = 2.0
     @IBOutlet weak var map: MKMapView!
     let manager = CLLocationManager()
     var location1 : CLLocationCoordinate2D = CLLocationCoordinate2D()
+    
+   // var time=180
+    
     
 
     func callTimer()
@@ -28,6 +31,8 @@ class MapLocationViewLocaion: UIViewController,CLLocationManagerDelegate {
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
         callTimer()
+        
+       
 
         // Do any additional setup after loading the view.
     }
@@ -47,7 +52,7 @@ class MapLocationViewLocaion: UIViewController,CLLocationManagerDelegate {
         print("The latitude is : \(location1.latitude)")
         print("The longitude is : \(location1.longitude)")
         
-        print(manager.startMonitoringSignificantLocationChanges())
+       // print(manager.startMonitoringSignificantLocationChanges())
         
     }
     override func didReceiveMemoryWarning() {
