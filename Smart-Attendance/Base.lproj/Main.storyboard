@@ -54,12 +54,12 @@
                                 <color key="textColor" red="0.78240365932642486" green="0.44908234043455469" blue="0.030664868183424784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Attendance" translatesAutoresizingMaskIntoConstraints="NO" id="6ks-TC-cuk">
-                                <rect key="frame" x="67" y="363" width="240" height="213"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="last smpng" translatesAutoresizingMaskIntoConstraints="NO" id="l75-gU-ciT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sm main" translatesAutoresizingMaskIntoConstraints="NO" id="LUa-Je-6LD">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="108"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-04-02 at 9.26.16 PM" translatesAutoresizingMaskIntoConstraints="NO" id="AGs-i1-NbA">
+                                <rect key="frame" x="63" y="381" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -360,12 +360,12 @@
                                 <rect key="frame" x="0.0" y="533" width="375" height="134"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sm main" translatesAutoresizingMaskIntoConstraints="NO" id="k7f-Lc-hWx">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="107"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loginfinal" translatesAutoresizingMaskIntoConstraints="NO" id="ysk-O9-Wzy">
                                 <rect key="frame" x="22" y="277" width="96" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="last smpng" translatesAutoresizingMaskIntoConstraints="NO" id="MgQ-pO-33O">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -467,16 +467,16 @@
                                 <rect key="frame" x="0.0" y="562" width="375" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sm fi" translatesAutoresizingMaskIntoConstraints="NO" id="WEx-ig-hfU">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="girlfinal" translatesAutoresizingMaskIntoConstraints="NO" id="uOY-He-N1s">
                                 <rect key="frame" x="298" y="101" width="77" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gentfinal" translatesAutoresizingMaskIntoConstraints="NO" id="POH-MI-3eb">
                                 <rect key="frame" x="0.0" y="101" width="79" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="last smpng" translatesAutoresizingMaskIntoConstraints="NO" id="IVG-jY-nkK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -495,20 +495,19 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Attendance" width="890" height="602"/>
+        <image name="Screen Shot 2018-04-02 at 9.26.16 PM" width="394" height="234"/>
         <image name="coollogo_com-1338986" width="258" height="89"/>
         <image name="coollogo_com-95991079" width="594" height="89"/>
         <image name="gentfinal" width="519" height="879"/>
         <image name="girlfinal" width="290" height="716"/>
         <image name="hand-1" width="1600" height="500"/>
         <image name="ki" width="300" height="300"/>
+        <image name="last smpng" width="594" height="89"/>
         <image name="loginfinal" width="283" height="298"/>
-        <image name="sm fi" width="594" height="89"/>
-        <image name="sm main" width="594" height="89"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Ndz-Hr-5cr"/>
-        <segue reference="OsZ-Z0-bxs"/>
+        <segue reference="a2O-iI-KTr"/>
         <segue reference="OL7-VW-YZB"/>
     </inferredMetricsTieBreakers>
 </document>
