@@ -45,6 +45,7 @@ class SignupViewController: UIViewController {
         user.username = SidTextView.text! //usernameTF.text!
         user.password = pwdTextView.text!
         user.email = emailTextView.text!
+        user["role"] = "Student"
         
         
         print("signing up  \(user.username) with pwd \(user.password)" )
