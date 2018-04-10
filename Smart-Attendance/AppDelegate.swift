@@ -14,7 +14,8 @@ import CoreLocation
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate{
     
-
+//sid for sending across the activities to generate QR code
+    var sid : String = ""
     var window: UIWindow?
     var locationManager = CLLocationManager()
     var backgroundUpdateTask: UIBackgroundTaskIdentifier!

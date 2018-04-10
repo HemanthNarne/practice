@@ -35,8 +35,8 @@ class SignupViewController: UIViewController {
 
     @IBOutlet weak var SidTextView: UITextField!
     @IBOutlet weak var pwdTextView: UITextField!
+    @IBOutlet weak var emailTextView: UITextField!
     
-
     
     
     @IBAction func register(sender: AnyObject) {
@@ -44,6 +44,8 @@ class SignupViewController: UIViewController {
         let user = PFUser()
         user.username = SidTextView.text! //usernameTF.text!
         user.password = pwdTextView.text!
+        user.email = emailTextView.text!
+        
         
         print("signing up  \(user.username) with pwd \(user.password)" )
         

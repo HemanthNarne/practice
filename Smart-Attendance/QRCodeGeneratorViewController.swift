@@ -14,6 +14,10 @@ class QRCodeGeneratorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+         print("value of sid",inputSID)
+        sidLBL.text = inputSID
+        
+        
 
         // Do any additional setup after loading the view.
     }
@@ -27,9 +31,10 @@ class QRCodeGeneratorViewController: UIViewController {
     
     @IBOutlet weak var firstImageView: UIImageView!
     
-    
+    var inputSID:String = ""
     @IBOutlet weak var inputSIDTF: UITextField!
     
+    @IBOutlet weak var sidLBL: UILabel!
     
     @IBAction func convert(_ sender: Any) {
         

@@ -12,6 +12,7 @@ import Parse
 class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
+       
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -22,14 +23,16 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBOutlet weak var emailTF: UITextField!
+    @IBOutlet weak var sidTF: UITextField!
     
     @IBOutlet weak var passwordTF: UITextField!
+    var userID : String = ""
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        
         if identifier == "submitId"{
             
-            if(emailTF.text==""||passwordTF.text==""){
+            if(sidTF.text==""||passwordTF.text==""){
                 let alert = UIAlertController(title: title, message: "Please enter all Fields",preferredStyle: .alert) // actions, displayed as Buttons in the alert, specify both the title of the button                 // and what to do -- in the handler -- when the button is tapped)
                 alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action) in alert.dismiss(animated:true,completion:nil)
                     
@@ -42,13 +45,14 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func login(sender: AnyObject) {
-        PFUser.logInWithUsername(inBackground: emailTF.text!, password: passwordTF.text!,
+        PFUser.logInWithUsername(inBackground: sidTF.text!, password: passwordTF.text!,
                                  block:{(user, error) -> Void in
                                     if error != nil{
                                         print(error)
                                         self.displayNotOKAlert(title: "Login failed!", message:"Invalid credentials")
                                     }
                                     else {
+                                        self.userID = self.sidTF.text!
                                         // Everything went alright here
                                         self.displayOKAlert(title: "Success!", message:"Login successful")
                                         
@@ -65,8 +69,12 @@ class LoginViewController: UIViewController {
         
        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
         let mainStoryboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        print("sid is",userID)
+        
         let viewController = mainStoryboard.instantiateViewController(withIdentifier: "QRCodeStoryBoard") as! QRCodeGeneratorViewController
+        viewController.inputSID = userID
         appDelegate.window?.rootViewController = viewController
+        
     
     }
     
