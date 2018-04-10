@@ -32,13 +32,12 @@ class QRCodeGeneratorViewController: UIViewController {
     @IBOutlet weak var firstImageView: UIImageView!
     
     var inputSID:String = ""
-    @IBOutlet weak var inputSIDTF: UITextField!
     
     @IBOutlet weak var sidLBL: UILabel!
     
     @IBAction func convert(_ sender: Any) {
         
-        if let stringVal=inputSIDTF.text{
+        if let stringVal=sidLBL.text{
             let data = stringVal.data(using: .ascii, allowLossyConversion: false)
             let output=CIFilter(name: "CIQRCodeGenerator")
             output?.setValue(data, forKey: "inputMessage")
@@ -58,7 +57,7 @@ class QRCodeGeneratorViewController: UIViewController {
             authenticationContext.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason: "We need your touch id", reply: { (wasSuccesful, error) in
                 if wasSuccesful {
                     print("success")
-                    if let stringVal=self.inputSIDTF.text{
+                    if let stringVal=self.sidLBL.text{
                         let data = stringVal.data(using: .ascii, allowLossyConversion: false)
                         let output=CIFilter(name: "CIQRCodeGenerator")
                         output?.setValue(data, forKey: "inputMessage")
