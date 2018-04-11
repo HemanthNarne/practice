@@ -54,10 +54,6 @@
                                 <color key="textColor" red="0.78240365932642486" green="0.44908234043455469" blue="0.030664868183424784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="last smpng" translatesAutoresizingMaskIntoConstraints="NO" id="l75-gU-ciT">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-04-02 at 9.26.16 PM" translatesAutoresizingMaskIntoConstraints="NO" id="AGs-i1-NbA">
                                 <rect key="frame" x="63" y="381" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -293,14 +289,6 @@
                                 <color key="textColor" red="0.7824036593" green="0.4490823404" blue="0.030664868179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coollogo_com-95991079" translatesAutoresizingMaskIntoConstraints="NO" id="v00-in-THw">
-                                <rect key="frame" x="36" y="0.0" width="301" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coollogo_com-1338986" translatesAutoresizingMaskIntoConstraints="NO" id="znQ-Ej-1et">
-                                <rect key="frame" x="103" y="56" width="148" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -362,18 +350,6 @@
                                     <segue destination="rQ2-93-bMP" kind="show" id="Ndz-Hr-5cr"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hand-1" translatesAutoresizingMaskIntoConstraints="NO" id="TeY-u0-EkN">
-                                <rect key="frame" x="0.0" y="533" width="375" height="134"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loginfinal" translatesAutoresizingMaskIntoConstraints="NO" id="ysk-O9-Wzy">
-                                <rect key="frame" x="15" y="322" width="96" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="last smpng" translatesAutoresizingMaskIntoConstraints="NO" id="MgQ-pO-33O">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsN-Ks-isk">
                                 <rect key="frame" x="43" y="219" width="41" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -508,22 +484,6 @@
                                     <segue destination="3Km-fL-XZb" kind="show" id="OsZ-Z0-bxs"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hand-1" translatesAutoresizingMaskIntoConstraints="NO" id="Mci-dr-aCk">
-                                <rect key="frame" x="0.0" y="562" width="375" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="girlfinal" translatesAutoresizingMaskIntoConstraints="NO" id="uOY-He-N1s">
-                                <rect key="frame" x="298" y="101" width="77" height="114"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gentfinal" translatesAutoresizingMaskIntoConstraints="NO" id="POH-MI-3eb">
-                                <rect key="frame" x="0.0" y="101" width="79" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="last smpng" translatesAutoresizingMaskIntoConstraints="NO" id="IVG-jY-nkK">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="If you do not have an account yet, please signup" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fr4-y5-rE7">
                                 <rect key="frame" x="112" y="420" width="211" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -564,18 +524,11 @@
     </scenes>
     <resources>
         <image name="Screen Shot 2018-04-02 at 9.26.16 PM" width="394" height="234"/>
-        <image name="coollogo_com-1338986" width="258" height="89"/>
-        <image name="coollogo_com-95991079" width="594" height="89"/>
-        <image name="gentfinal" width="519" height="879"/>
-        <image name="girlfinal" width="290" height="716"/>
-        <image name="hand-1" width="1600" height="500"/>
         <image name="ki" width="300" height="300"/>
-        <image name="last smpng" width="594" height="89"/>
-        <image name="loginfinal" width="283" height="298"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eBW-5O-BYA"/>
-        <segue reference="OsZ-Z0-bxs"/>
+        <segue reference="Ndz-Hr-5cr"/>
+        <segue reference="a2O-iI-KTr"/>
         <segue reference="OL7-VW-YZB"/>
     </inferredMetricsTieBreakers>
 </document>
