@@ -84,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hR2-Xj-AKo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2514" y="296"/>
+            <point key="canvasLocation" x="-2514" y="337"/>
         </scene>
         <!--Role Table View Controller-->
         <scene sceneID="OFz-X7-NEs">
@@ -325,16 +325,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69v-LA-AuP">
-                                <rect key="frame" x="159" y="311" width="57" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.72896911722202695" green="1" blue="0.74508820599183045" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Signup"/>
-                                <connections>
-                                    <action selector="registerWithSender:" destination="3Km-fL-XZb" eventType="touchUpInside" id="vkV-5T-45G"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0zC-gI-osL">
                                 <rect key="frame" x="129" y="127" width="116" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -412,6 +402,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69v-LA-AuP">
+                                <rect key="frame" x="159" y="379" width="57" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.72896911722202695" green="1" blue="0.74508820599183045" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Signup"/>
+                                <connections>
+                                    <action selector="registerWithSender:" destination="3Km-fL-XZb" eventType="touchUpInside" id="vkV-5T-45G"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x2o-Tm-3nk">
+                                <rect key="frame" x="129" y="255" width="176" height="64"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="zIC-KU-Lhc"/>
@@ -420,6 +424,7 @@
                         <outlet property="SidTextView" destination="0zC-gI-osL" id="S3r-XE-xlU"/>
                         <outlet property="emailTextView" destination="11Z-bQ-XhM" id="QlK-nu-oxC"/>
                         <outlet property="pwdTextView" destination="H1f-WD-Lkz" id="FJa-Au-h7O"/>
+                        <outlet property="studentOrFacultyPV" destination="x2o-Tm-3nk" id="KOE-us-UrM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VcH-i9-2El" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -483,7 +488,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aje-g3-Lbc">
-                                <rect key="frame" x="298" y="491" width="77" height="30"/>
+                                <rect key="frame" x="282" y="496" width="77" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.6341607090910274" green="0.83804242230000003" blue="0.77336102390264905" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -526,8 +531,12 @@
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yms-VW-j9E">
+                                <rect key="frame" x="153" y="268" width="176" height="64"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOI-Wf-JPI">
-                                <rect key="frame" x="182" y="324" width="90" height="35"/>
+                                <rect key="frame" x="182" y="340" width="90" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.6341607090910274" green="0.83804242230000003" blue="0.77336102390264905" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -565,7 +574,7 @@
         <image name="loginfinal" width="283" height="298"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ndz-Hr-5cr"/>
+        <segue reference="eBW-5O-BYA"/>
         <segue reference="OsZ-Z0-bxs"/>
         <segue reference="OL7-VW-YZB"/>
     </inferredMetricsTieBreakers>

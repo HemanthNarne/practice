@@ -9,12 +9,28 @@
 import UIKit
 import Parse
 
-class SignupViewController: UIViewController {
+class SignupViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.studentOrFacultyPV.delegate = self
+        self.studentOrFacultyPV.dataSource = self
         // Do any additional setup after loading the view.
+        
+        pickerData = ["Student", "Faculty"]
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,7 +53,9 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var pwdTextView: UITextField!
     @IBOutlet weak var emailTextView: UITextField!
     
+    @IBOutlet weak var studentOrFacultyPV: UIPickerView!
     
+    var pickerData: [String] = [String]()
     
     @IBAction func register(sender: AnyObject) {
         // Defining the user object
