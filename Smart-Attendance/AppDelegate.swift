@@ -14,12 +14,15 @@ import CoreLocation
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate{
     
+    static let mainFood = CourseRecorder()
+    
 //sid for sending across the activities to generate QR code
     var sid : String = ""
     var window: UIWindow?
     var locationManager = CLLocationManager()
     var backgroundUpdateTask: UIBackgroundTaskIdentifier!
     @objc var bgtimer = Timer()
+    
     
  
     var location1 : CLLocationCoordinate2D = CLLocationCoordinate2D()

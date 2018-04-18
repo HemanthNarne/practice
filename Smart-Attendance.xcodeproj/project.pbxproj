@@ -12,6 +12,7 @@
 		39E579EC2052FEF50094F172 /* QRReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E579EB2052FEF50094F172 /* QRReaderViewController.swift */; };
 		3F268CE920707C63003DE6CC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F268CE820707C63003DE6CC /* CoreLocation.framework */; };
 		3F268CEB20707CF5003DE6CC /* MapLocationViewLocaion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F268CEA20707CF5003DE6CC /* MapLocationViewLocaion.swift */; };
+		3F4305602086FA2E005D8F14 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F43055F2086FA2E005D8F14 /* Model.swift */; };
 		3FDAF5792051012300D4958B /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDAF5782051012300D4958B /* LocalAuthentication.framework */; };
 		D53391AB2072B7E8007713CE /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D53391A92072B7E7007713CE /* Bolts.framework */; };
 		D53391AC2072B7E8007713CE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D53391AA2072B7E8007713CE /* Parse.framework */; };
@@ -34,6 +35,7 @@
 		39E579EB2052FEF50094F172 /* QRReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRReaderViewController.swift; sourceTree = "<group>"; };
 		3F268CE820707C63003DE6CC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		3F268CEA20707CF5003DE6CC /* MapLocationViewLocaion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationViewLocaion.swift; sourceTree = "<group>"; };
+		3F43055F2086FA2E005D8F14 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		3FDAF5782051012300D4958B /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		D53391A92072B7E7007713CE /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		D53391AA2072B7E8007713CE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				D53391B52072D3B0007713CE /* SignupViewController.swift */,
 				D59DA95120372AA100477F08 /* Main.storyboard */,
 				D5FE43FF2037984A001F29B1 /* RoleTableViewController.swift */,
+				3F43055F2086FA2E005D8F14 /* Model.swift */,
 				3997161F2037867400E1C5EF /* QRCodeGeneratorViewController.swift */,
 				3F268CEA20707CF5003DE6CC /* MapLocationViewLocaion.swift */,
 				D59DA95420372AA100477F08 /* Assets.xcassets */,
@@ -199,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F4305602086FA2E005D8F14 /* Model.swift in Sources */,
 				094DEF3720379123006F9C4C /* LoginViewController.swift in Sources */,
 				D59DA95020372AA100477F08 /* ViewController.swift in Sources */,
 				D53391B62072D3B0007713CE /* SignupViewController.swift in Sources */,
@@ -345,7 +349,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3MZ2LM332N;
+				DEVELOPMENT_TEAM = BD9CD55V6R;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -353,7 +357,7 @@
 				INFOPLIST_FILE = "Smart-Attendance/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = sravantiBundle;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.nwmissouri.Smart-Attendance";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -367,7 +371,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3MZ2LM332N;
+				DEVELOPMENT_TEAM = BD9CD55V6R;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -375,7 +379,7 @@
 				INFOPLIST_FILE = "Smart-Attendance/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = sravantiBundle;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.nwmissouri.Smart-Attendance";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;

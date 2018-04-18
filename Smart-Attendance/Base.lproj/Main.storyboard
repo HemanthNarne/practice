@@ -44,7 +44,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="GsQ-pS-fJI" kind="show" id="wdG-nJ-EdF"/>
+                                    <segue destination="YRB-yD-mod" kind="show" id="Lm3-HA-kUs"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-04-02 at 9.26.16 PM" translatesAutoresizingMaskIntoConstraints="NO" id="AGs-i1-NbA">
@@ -90,8 +90,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93262392282485962" green="0.80539494752883911" blue="0.67873752117156982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pPa-a0-Zwo">
+                            <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Scan"/>
+                            <connections>
+                                <segue destination="GsQ-pS-fJI" kind="show" id="eMZ-qh-rIp"/>
+                            </connections>
+                        </button>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="IxP-3b-vTV">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="course_cell" id="IxP-3b-vTV">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IxP-3b-vTV" id="FDp-5z-kZ9">
@@ -109,7 +117,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sut-Dr-Qgg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="351" y="414"/>
+            <point key="canvasLocation" x="-1674.4000000000001" y="383.65817091454278"/>
         </scene>
         <!--Map Location View Locaion-->
         <scene sceneID="qZX-6V-O7B">
@@ -309,10 +317,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x2o-Tm-3nk">
-                                <rect key="frame" x="133" y="272" width="176" height="64"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SMART ATTENDANCE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xh-fL-kQi">
                                 <rect key="frame" x="33" y="50" width="309" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -351,6 +355,10 @@
                                     <action selector="registerWithSender:" destination="3Km-fL-XZb" eventType="touchUpInside" id="vkV-5T-45G"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x2o-Tm-3nk">
+                                <rect key="frame" x="133" y="272" width="176" height="64"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="0.74518296632124348" green="0.6144018024187432" blue="0.62917430660034945" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <rect key="contentStretch" x="0.0" y="0.050000000000000003" width="1" height="1"/>
@@ -479,7 +487,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Ndz-Hr-5cr"/>
-        <segue reference="OsZ-Z0-bxs"/>
+        <segue reference="a2O-iI-KTr"/>
         <segue reference="OL7-VW-YZB"/>
     </inferredMetricsTieBreakers>
 </document>
