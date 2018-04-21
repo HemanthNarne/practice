@@ -83,6 +83,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="GsQ-pS-fJI" kind="show" id="aLb-t3-5eM"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -135,6 +138,9 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.78774327039718628" green="0.94708377122879028" blue="0.86494559049606323" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="8wQ-Zu-ehG" kind="show" id="8ll-AN-HdL"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -520,6 +526,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="hjP-06-LuW"/>
         <segue reference="a2O-iI-KTr"/>
+        <segue reference="aLb-t3-5eM"/>
         <segue reference="OL7-VW-YZB"/>
     </inferredMetricsTieBreakers>
 </document>
