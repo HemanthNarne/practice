@@ -11,7 +11,8 @@ import AVFoundation
 import Parse
 
 class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
-    
+    static var course : String = ""
+
     var video=AVCaptureVideoPreviewLayer()
      let session=AVCaptureSession()
     @IBOutlet weak var square: UIImageView!
@@ -78,6 +79,7 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
                     let attendance = PFObject(className: "Attendance")
                     attendance["Id"] = object.stringValue
                     attendance["starttime"] = NSDate()
+                    attendance["course"] = QRReaderViewController.course
                     if object.stringValue != nil {
                         
                     session.stopRunning()
@@ -118,7 +120,6 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
         }
         }
     }
-    
     
     func displayOKAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message:

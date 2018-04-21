@@ -46,6 +46,20 @@ class FacultyTableViewController: UITableViewController {
 
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("course:",courses[indexPath.row])
+        QRReaderViewController.course = courses[indexPath.row]
+        self.performSegue(withIdentifier: "qrReaderSegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("segue id:",segue.identifier)
+        if segue.identifier == "qrReaderSegue" {
+        print("in prepare")
+        }
+        
+    }
  
 
     /*
