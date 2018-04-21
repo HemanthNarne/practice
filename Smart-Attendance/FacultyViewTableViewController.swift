@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class FacultyViewTableViewController: UITableViewController {
 
@@ -37,6 +38,27 @@ class FacultyViewTableViewController: UITableViewController {
         return 0
     }
 
+    
+    
+//    @IBAction func fetch(sender:AnyObject) {
+//        let query = PFQuery(className:"Attendace")     // Fetches all the Movie objects
+//        query.findObjectsInBackground {   // what happened to the ( ) ?
+//            (objects: [PFObject]?, error: Error?) -> Void in
+//            if error == nil {
+//                // The find succeeded.
+//                self.displayOKAlert(title: "Success!",
+//                                    message:"Retrieved \(objects!.count) objects.")
+//                self.movies = objects as! [Movie]
+//                // Do something with the found objects
+//                // Like display them in a table view.
+//                self.moviesTV.reloadData()
+//            } else {
+//                // Log details of the failure
+//                self.displayOKAlert(title: "Oops", message: “\(error!)")
+//            } }
+//    }
+    
+    
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)

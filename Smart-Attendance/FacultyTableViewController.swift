@@ -49,7 +49,7 @@ class FacultyTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("course:",courses[indexPath.row])
-        QRReaderViewController.course = courses[indexPath.row]
+        QRReaderViewController.courseName = courses[indexPath.row]
         self.performSegue(withIdentifier: "qrReaderSegue", sender: self)
     }
     

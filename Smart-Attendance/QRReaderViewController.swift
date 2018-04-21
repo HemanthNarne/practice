@@ -11,7 +11,7 @@ import AVFoundation
 import Parse
 
 class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
-    static var course : String = ""
+    static var courseName : String = ""
 
     var video=AVCaptureVideoPreviewLayer()
      let session=AVCaptureSession()
@@ -79,7 +79,7 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
                     let attendance = PFObject(className: "Attendance")
                     attendance["Id"] = object.stringValue
                     attendance["starttime"] = NSDate()
-                    attendance["course"] = QRReaderViewController.course
+                    attendance["course"] = QRReaderViewController.courseName
                     if object.stringValue != nil {
                         
                     session.stopRunning()
@@ -105,7 +105,7 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
                     
                     alert.addAction(UIAlertAction(title: "Done!Exit Scanner", style: .default) { (action) -> Void in
                         let viewControllerYouWantToPresent =
-                            self.storyboard?.instantiateViewController(withIdentifier: "FacultyViewTableViewController")
+                            self.storyboard?.instantiateViewController(withIdentifier: "FacultySummaryViewController")
                         self.present(viewControllerYouWantToPresent!, animated: true, completion: nil)
                       //  self.presentViewController(viewControllerYouWantToPresent!, animated: true, completion: nil)
                     })
