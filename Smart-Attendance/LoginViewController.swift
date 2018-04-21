@@ -90,14 +90,19 @@ class LoginViewController: UIViewController,UIPickerViewDataSource,UIPickerViewD
         print("sid is",userID)
         if selectedRole == "Faculty" {
             let viewController = mainStoryboard.instantiateViewController(withIdentifier: "facultyIdentifier") as! FacultyTableViewController
+            
             //viewController.inputSID = userID
             appDelegate.window?.rootViewController = viewController
             
         }
-        else {
-            let viewController = mainStoryboard.instantiateViewController(withIdentifier: "roleTVC") as! RoleTableViewController
+       else {
+            let viewController = mainStoryboard.instantiateViewController(withIdentifier: "QRCodeStoryBoard") as! QRCodeGeneratorViewController
+            //        viewController.inputSID = userID
+                   appDelegate.window?.rootViewController = viewController
+            
+         //   let viewController = mainStoryboard.instantiateViewController(withIdentifier: "roleTVC") as! RoleTableViewController
             //viewController.inputSID = userID
-            appDelegate.window?.rootViewController = viewController
+           // appDelegate.window?.rootViewController = viewController
             
         }
 //        let viewController = mainStoryboard.instantiateViewController(withIdentifier: "QRCodeStoryBoard") as! QRCodeGeneratorViewController
