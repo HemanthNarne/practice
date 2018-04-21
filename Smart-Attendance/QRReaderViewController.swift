@@ -96,10 +96,20 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
                     print("before alert")
                     
                     let alert=UIAlertController(title: "QR Code", message: object.stringValue, preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "Retake", style: .default, handler: nil))
-                    alert.addAction(UIAlertAction(title: "Attendance taken", style: .default, handler: {(nil) in
+                 //   alert.addAction(UIAlertAction(title: "Retake", style: .default, handler: nil))
+                    alert.addAction(UIAlertAction(title: "Continue Scanning", style: .default, handler: {(nil) in
                         UIPasteboard.general.string=object.stringValue
                     }))
+                    
+                    alert.addAction(UIAlertAction(title: "Done!Exit Scanner", style: .default) { (action) -> Void in
+                        let viewControllerYouWantToPresent =
+                            self.storyboard?.instantiateViewController(withIdentifier: "FacultyViewTableViewController")
+                        self.present(viewControllerYouWantToPresent!, animated: true, completion: nil)
+                      //  self.presentViewController(viewControllerYouWantToPresent!, animated: true, completion: nil)
+                    })
+                   // alert.addAction(UIAlertAction(title: "Done", style: .default, handler: {(nil) in
+                    //    UIPasteboard.general.string=object.stringValue
+                  //  }))
                     session.startRunning()
                     present(alert,animated: true,completion: nil)
                     

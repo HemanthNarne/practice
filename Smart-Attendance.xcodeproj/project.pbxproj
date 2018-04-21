@@ -15,6 +15,7 @@
 		3F4305602086FA2E005D8F14 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F43055F2086FA2E005D8F14 /* Model.swift */; };
 		3FD53973208AE1FC00425ED7 /* FacultyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD53972208AE1FC00425ED7 /* FacultyTableViewController.swift */; };
 		3FDAF5792051012300D4958B /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDAF5782051012300D4958B /* LocalAuthentication.framework */; };
+		3FFDF98F208BD8A500AB6FEC /* FacultyViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDF98E208BD8A500AB6FEC /* FacultyViewTableViewController.swift */; };
 		D53391AB2072B7E8007713CE /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D53391A92072B7E7007713CE /* Bolts.framework */; };
 		D53391AC2072B7E8007713CE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D53391AA2072B7E8007713CE /* Parse.framework */; };
 		D53391AE2072B83B007713CE /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D53391AD2072B83B007713CE /* libstdc++.6.tbd */; };
@@ -39,6 +40,7 @@
 		3F43055F2086FA2E005D8F14 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		3FD53972208AE1FC00425ED7 /* FacultyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacultyTableViewController.swift; sourceTree = "<group>"; };
 		3FDAF5782051012300D4958B /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		3FFDF98E208BD8A500AB6FEC /* FacultyViewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacultyViewTableViewController.swift; sourceTree = "<group>"; };
 		D53391A92072B7E7007713CE /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		D53391AA2072B7E8007713CE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		D53391AD2072B83B007713CE /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
@@ -124,6 +126,7 @@
 				D59DA95620372AA100477F08 /* LaunchScreen.storyboard */,
 				D59DA95920372AA100477F08 /* Info.plist */,
 				3FD53972208AE1FC00425ED7 /* FacultyTableViewController.swift */,
+				3FFDF98E208BD8A500AB6FEC /* FacultyViewTableViewController.swift */,
 			);
 			path = "Smart-Attendance";
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F4305602086FA2E005D8F14 /* Model.swift in Sources */,
+				3FFDF98F208BD8A500AB6FEC /* FacultyViewTableViewController.swift in Sources */,
 				094DEF3720379123006F9C4C /* LoginViewController.swift in Sources */,
 				D59DA95020372AA100477F08 /* ViewController.swift in Sources */,
 				D53391B62072D3B0007713CE /* SignupViewController.swift in Sources */,
@@ -353,7 +357,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BD9CD55V6R;
+				DEVELOPMENT_TEAM = X7JDTY4D6F;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -361,7 +365,7 @@
 				INFOPLIST_FILE = "Smart-Attendance/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.nwmissouri.Smart-Attendance";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.nwmissouri.BookMyCourt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -375,7 +379,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BD9CD55V6R;
+				DEVELOPMENT_TEAM = X7JDTY4D6F;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -383,7 +387,7 @@
 				INFOPLIST_FILE = "Smart-Attendance/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.nwmissouri.Smart-Attendance";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.nwmissouri.BookMyCourt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
