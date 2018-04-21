@@ -100,6 +100,7 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
                     alert.addAction(UIAlertAction(title: "Attendance taken", style: .default, handler: {(nil) in
                         UIPasteboard.general.string=object.stringValue
                     }))
+                    session.startRunning()
                     present(alert,animated: true,completion: nil)
                     
                 
