@@ -97,7 +97,7 @@ class LoginViewController: UIViewController,UIPickerViewDataSource,UIPickerViewD
         }
        else {
             let viewController = mainStoryboard.instantiateViewController(withIdentifier: "QRCodeStoryBoard") as! QRCodeGeneratorViewController
-            //        viewController.inputSID = userID
+                    viewController.inputSID = userID
                    appDelegate.window?.rootViewController = viewController
             
          //   let viewController = mainStoryboard.instantiateViewController(withIdentifier: "roleTVC") as! RoleTableViewController
