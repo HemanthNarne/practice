@@ -1,16 +1,14 @@
 //
-//  RoleTableViewController.swift
+//  FacultyTableViewController.swift
 //  Smart-Attendance
 //
-//  Created by Modali,Naga Sravanthi on 2/16/18.
+//  Created by student on 4/20/18.
 //  Copyright © 2018 Modali,Naga Sravanthi. All rights reserved.
 //
 
 import UIKit
 
-class RoleTableViewController: UITableViewController  {
-
-    
+class FacultyTableViewController: UITableViewController {
     var courses = ["iOS","Java","Android"]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,32 +34,20 @@ class RoleTableViewController: UITableViewController  {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        //return AppDelegate.mainFood.numCourseItems()
         return courses.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "course_cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "facultyCell", for: indexPath)
 
         // Configure the cell...
+        cell.textLabel?.text = courses[indexPath.row]
 
-//        cell.textLabel?.text=AppDelegate.mainFood.courses[indexPath.row].name
-       cell.textLabel?.text = courses[indexPath.row]
-        
-      
         return cell
     }
-    
+ 
 
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier=="go_to_scanner"{
-            
-        }
-    }
-    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

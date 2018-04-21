@@ -44,7 +44,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="YRB-yD-mod" kind="show" id="Lm3-HA-kUs"/>
+                                    <segue destination="rQ2-93-bMP" kind="show" id="hjP-06-LuW"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-04-02 at 9.26.16 PM" translatesAutoresizingMaskIntoConstraints="NO" id="AGs-i1-NbA">
@@ -67,6 +67,34 @@
             </objects>
             <point key="canvasLocation" x="-2514.4000000000001" y="-419.64017991004499"/>
         </scene>
+        <!--Faculty Table View Controller-->
+        <scene sceneID="cmJ-Vf-fix">
+            <objects>
+                <tableViewController storyboardIdentifier="facultyIdentifier" id="1NU-3m-ChL" customClass="FacultyTableViewController" customModule="Smart_Attendance" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1my-lx-erf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="facultyCell" id="I6F-Su-jn5">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I6F-Su-jn5" id="9wC-ln-1TC">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1NU-3m-ChL" id="BLQ-vl-Sf8"/>
+                            <outlet property="delegate" destination="1NU-3m-ChL" id="dot-BM-Hvi"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bo2-ey-QfU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3202.4000000000001" y="338.68065967016497"/>
+        </scene>
         <!--Faculty-->
         <scene sceneID="qHV-AY-JK4">
             <objects>
@@ -85,7 +113,7 @@
         <!--Role Table View Controller-->
         <scene sceneID="OFz-X7-NEs">
             <objects>
-                <tableViewController id="YRB-yD-mod" customClass="RoleTableViewController" customModule="Smart_Attendance" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="roleTVC" id="YRB-yD-mod" customClass="RoleTableViewController" customModule="Smart_Attendance" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="13g-WS-QgI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -439,6 +467,10 @@
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yms-VW-j9E">
                                 <rect key="frame" x="144" y="236" width="171" height="64"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="rQ2-93-bMP" id="IJy-kB-vzP"/>
+                                    <outlet property="delegate" destination="rQ2-93-bMP" id="JeR-I5-wtT"/>
+                                </connections>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SMART ATTENDANCE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIg-na-i7w">
                                 <rect key="frame" x="27" y="60" width="320" height="45"/>
@@ -486,7 +518,7 @@
         <image name="ki" width="300" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ndz-Hr-5cr"/>
+        <segue reference="hjP-06-LuW"/>
         <segue reference="a2O-iI-KTr"/>
         <segue reference="OL7-VW-YZB"/>
     </inferredMetricsTieBreakers>

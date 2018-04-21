@@ -9,7 +9,24 @@
 import UIKit
 import Parse
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
+    var role = ["Faculty","Student"]
+    var selectedRole = "Faculty"
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return role.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectedRole = role[row]
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return role[row]
+    }
+    
 
     override func viewDidLoad() {
        
@@ -56,6 +73,7 @@ class LoginViewController: UIViewController {
                                         // Everything went alright here
                                         self.displayOKAlert(title: "Success!", message:"Login successful")
                                         
+                                        
                                     } })
     }
     
@@ -70,10 +88,21 @@ class LoginViewController: UIViewController {
        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
         let mainStoryboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         print("sid is",userID)
-        
-        let viewController = mainStoryboard.instantiateViewController(withIdentifier: "QRCodeStoryBoard") as! QRCodeGeneratorViewController
-        viewController.inputSID = userID
-        appDelegate.window?.rootViewController = viewController
+        if selectedRole == "Faculty" {
+            let viewController = mainStoryboard.instantiateViewController(withIdentifier: "facultyIdentifier") as! FacultyTableViewController
+            //viewController.inputSID = userID
+            appDelegate.window?.rootViewController = viewController
+            
+        }
+        else {
+            let viewController = mainStoryboard.instantiateViewController(withIdentifier: "roleTVC") as! RoleTableViewController
+            //viewController.inputSID = userID
+            appDelegate.window?.rootViewController = viewController
+            
+        }
+//        let viewController = mainStoryboard.instantiateViewController(withIdentifier: "QRCodeStoryBoard") as! QRCodeGeneratorViewController
+//        viewController.inputSID = userID
+//        appDelegate.window?.rootViewController = viewController
         
     
     }

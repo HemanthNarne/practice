@@ -13,6 +13,7 @@
 		3F268CE920707C63003DE6CC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F268CE820707C63003DE6CC /* CoreLocation.framework */; };
 		3F268CEB20707CF5003DE6CC /* MapLocationViewLocaion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F268CEA20707CF5003DE6CC /* MapLocationViewLocaion.swift */; };
 		3F4305602086FA2E005D8F14 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F43055F2086FA2E005D8F14 /* Model.swift */; };
+		3FD53973208AE1FC00425ED7 /* FacultyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD53972208AE1FC00425ED7 /* FacultyTableViewController.swift */; };
 		3FDAF5792051012300D4958B /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDAF5782051012300D4958B /* LocalAuthentication.framework */; };
 		D53391AB2072B7E8007713CE /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D53391A92072B7E7007713CE /* Bolts.framework */; };
 		D53391AC2072B7E8007713CE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D53391AA2072B7E8007713CE /* Parse.framework */; };
@@ -36,6 +37,7 @@
 		3F268CE820707C63003DE6CC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		3F268CEA20707CF5003DE6CC /* MapLocationViewLocaion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationViewLocaion.swift; sourceTree = "<group>"; };
 		3F43055F2086FA2E005D8F14 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		3FD53972208AE1FC00425ED7 /* FacultyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacultyTableViewController.swift; sourceTree = "<group>"; };
 		3FDAF5782051012300D4958B /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		D53391A92072B7E7007713CE /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		D53391AA2072B7E8007713CE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				D59DA95420372AA100477F08 /* Assets.xcassets */,
 				D59DA95620372AA100477F08 /* LaunchScreen.storyboard */,
 				D59DA95920372AA100477F08 /* Info.plist */,
+				3FD53972208AE1FC00425ED7 /* FacultyTableViewController.swift */,
 			);
 			path = "Smart-Attendance";
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				D53391B62072D3B0007713CE /* SignupViewController.swift in Sources */,
 				39E579EC2052FEF50094F172 /* QRReaderViewController.swift in Sources */,
 				D59DA94E20372AA100477F08 /* AppDelegate.swift in Sources */,
+				3FD53973208AE1FC00425ED7 /* FacultyTableViewController.swift in Sources */,
 				D5FE44002037984A001F29B1 /* RoleTableViewController.swift in Sources */,
 				3F268CEB20707CF5003DE6CC /* MapLocationViewLocaion.swift in Sources */,
 				399716202037867400E1C5EF /* QRCodeGeneratorViewController.swift in Sources */,
