@@ -22,6 +22,7 @@ class SignupViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerData[row]
     }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +65,11 @@ class SignupViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         user.password = pwdTextView.text!
         user.email = emailTextView.text!
         user["role"] = "Student"
+        let row = [studentOrFacultyPV .selectedRow(inComponent: 0)]
+       // user["role"] = pickerData[row]
+        
+        
+        
         
         
         print("signing up  \(user.username) with pwd \(user.password)" )

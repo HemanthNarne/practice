@@ -10,6 +10,8 @@ import UIKit
 import Parse
 
 class LoginViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
+    
+    
     var role = ["Faculty","Student"]
     var selectedRole = "Faculty"
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -75,6 +77,7 @@ class LoginViewController: UIViewController,UIPickerViewDataSource,UIPickerViewD
                                         
                                         
                                     } })
+        AppDelegate.s_id = sidTF.text!
     }
     
     func displayOKAlert(title: String, message: String) {

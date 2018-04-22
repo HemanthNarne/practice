@@ -9,19 +9,31 @@
 import UIKit
 import Parse
 
-class FacultySummaryViewController: UIViewController{
+class FacultySummaryViewController: UIViewController,UITableViewDataSource,UITableViewDelegate{
+    
+    var attendance:[Attendance] = []
+    
+    @IBOutlet weak var facSummaryTV: UITableView!
+    
 //    class FacultySummaryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//       return  1
-//    }
-//    
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        return 1
-//    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       return  self.attendance.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "attendance" ,for:indexPath)
+        if self.attendance.count > 0{
+            cell.textLabel?.text = self.attendance[indexPath.row].sID
+            cell.detailTextLabel?.text = self.attendance[indexPath.row].course
+        }
+        return cell
+    }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // Do any additional setup after loading the view.
     }
@@ -33,21 +45,29 @@ class FacultySummaryViewController: UIViewController{
     
 
     @IBAction func fetch(sender:AnyObject) {
-        let query = PFQuery(className:"Attendace")     // Fetches all the Movie objects
+        let query = PFQuery(className:"Attendance")     // Fetches all the Movie objects
         query.findObjectsInBackground {   // what happened to the ( ) ?
             (objects: [PFObject]?, error: Error?) -> Void in
-//            if error == nil {
-//                // The find succeeded.
-//                self.displayOKAlert(title: "Success!",
-//                                    message:"Retrieved \(objects!.count) objects.")
-//                self.movies = objects as! [Movie]
-//                // Do something with the found objects
-//                // Like display them in a table view.
-//                self.moviesTV.reloadData()
-//            } else {
-//                // Log details of the failure
-//                self.displayOKAlert(title: "Oops", message: “\(error!)")
-//            }
+            if error == nil {
+                //                // The find succeeded.
+                //                self.displayOKAlert(title: "Success!",
+                //                                    message:"Retrieved \(objects!.count) objects.")
+                //                self.movies = objects as! [Movie]
+                //                // Do something with the found objects
+                //                // Like display them in a table view.
+                //                self.moviesTV.reloadData()
+                for object in objects!{
+                    let reacord = object as! Attendance
+                    self.attendance.append(reacord)
+                }
+                print(self.attendance.count)
+                self.facSummaryTV.reloadData()
+                
+            } else {
+                // Log details of the failure
+                // self.displayOKAlert(title: "Oops", message: "\(error!)")
+                print(error!)
+            }
             
         }
     }

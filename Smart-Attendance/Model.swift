@@ -15,7 +15,17 @@
 //
 
 import Foundation
+import Parse
 
+class Attendance:PFObject,PFSubclassing{
+    @NSManaged var sID:String
+    @NSManaged var date:String
+    @NSManaged var course:String
+    
+    static func parseClassName()->String{
+        return "Attendance"
+    }
+}
 
 struct Course{
     var name:String

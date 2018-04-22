@@ -10,7 +10,6 @@ import UIKit
 
 class RoleTableViewController: UITableViewController  {
 
-    
     var courses = ["iOS","Java","Android"]
     override func viewDidLoad() {
         super.viewDidLoad()

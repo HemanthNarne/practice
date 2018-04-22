@@ -76,10 +76,16 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
                     
                     print("scanned code is: ",object.stringValue as Any)
                     
-                    let attendance = PFObject(className: "Attendance")
-                    attendance["Id"] = object.stringValue
-                    attendance["starttime"] = NSDate()
-                    attendance["course"] = QRReaderViewController.courseName
+                    //let attendance = PFObject(className: "Attendance")
+                    let attendance = Attendance()
+                    
+//                    attendance["Id"] = object.stringValue
+//                    attendance["starttime"] = NSDate()
+//                    attendance["course"] = QRReaderViewController.courseName
+                    attendance.sID = object.stringValue!
+                    AppDelegate.s_id = attendance.sID
+                    attendance.date = String(describing: NSDate())
+                    attendance.course = QRReaderViewController.courseName
                     if object.stringValue != nil {
                         
                     session.stopRunning()
