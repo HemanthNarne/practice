@@ -49,6 +49,7 @@ class LoginViewController: UIViewController,UIPickerViewDataSource,UIPickerViewD
     //This is responsible for sid textfield
     @IBOutlet weak var sidTF: UITextField!
     
+    //This is responsible for password textfield
     @IBOutlet weak var passwordTF: UITextField!
     var userID : String = ""
     
@@ -66,6 +67,7 @@ class LoginViewController: UIViewController,UIPickerViewDataSource,UIPickerViewD
         }
         return true
     }
+    
     
     
     //The user can login using this function
