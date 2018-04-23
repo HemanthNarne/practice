@@ -122,6 +122,7 @@ class LoginViewController: UIViewController,UIPickerViewDataSource,UIPickerViewD
     }
     
     
+    //This is responsible for displaying NotOkAlert
     func displayNotOKAlert(title: String, message: String) {
         
         let alert = UIAlertController(title: title, message:
