@@ -30,3 +30,11 @@ You can register to the app by signing up and then you can login with those ID a
 4. You can select your role according to your profession.
 5. If you are a student, then you will be redirected to QR code generator page. You can simply do that by clicking, generate QR code button at the top.
 6. If you are a professor, then you can select a course and can scan the QR code.
+
+## Completion Status
+1. Layouts for all screens - Complete
+2. QR code generator - Complete
+3. QR code Scanner - Complete
+4. Register and Login Functionality - Complete
+5. The location coordinate from professor’s phone - Partially Complete (Location coordinates are populated in the database when the app’s running in the background. The validation of coordinates is to be done)
+6. Testing - Complete
