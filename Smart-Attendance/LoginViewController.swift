@@ -8,7 +8,8 @@
 
 import UIKit
 import Parse
-//
+
+//The view is responsiblefor logging in of faculty and student
 class LoginViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
     
     
