@@ -53,6 +53,7 @@ class LoginViewController: UIViewController,UIPickerViewDataSource,UIPickerViewD
     @IBOutlet weak var passwordTF: UITextField!
     var userID : String = ""
     
+    //This isresponsible for performing segue
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         
         if identifier == "submitId"{
