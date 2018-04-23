@@ -62,7 +62,7 @@ class LoginViewController: UIViewController,UIPickerViewDataSource,UIPickerViewD
         return true
     }
     
-    
+    //The user can login using this function
     @IBAction func login(sender: AnyObject) {
         PFUser.logInWithUsername(inBackground: sidTF.text!, password: passwordTF.text!,
                                  block:{(user, error) -> Void in
