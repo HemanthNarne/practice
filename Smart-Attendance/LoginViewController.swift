@@ -18,7 +18,7 @@ class LoginViewController: UIViewController,UIPickerViewDataSource,UIPickerViewD
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
-    
+    //This funcion is responsible for picker view of the row
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return role.count
     }
