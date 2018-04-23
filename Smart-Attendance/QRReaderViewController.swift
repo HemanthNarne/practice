@@ -12,9 +12,10 @@ import Parse
 
 class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     static var courseName : String = ""
-
+    static var facID : String = ""
+    
     var video=AVCaptureVideoPreviewLayer()
-     let session=AVCaptureSession()
+    let session=AVCaptureSession()
     @IBOutlet weak var square: UIImageView!
     
     override func viewDidLoad() {
@@ -23,8 +24,8 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
         //Detetcting the OR Codes
         
         //Creating a session
-       
-      
+        
+        
         //Define to capture video
         let captureDevice=AVCaptureDevice.default(for: AVMediaType.video)
         
@@ -47,7 +48,7 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
         session.addOutput(output)
         
         //define main queue where output is being processed
-      //process this on main thread
+        //process this on main thread
         
         
         output.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
@@ -63,8 +64,8 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
         session.startRunning()
         
         
-       // let captureDevice=AVCaptureDevice.default(for: AVMediaType)
-
+        // let captureDevice=AVCaptureDevice.default(for: AVMediaType)
+        
         // Do any additional setup after loading the view.
     }
     
@@ -79,23 +80,24 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
                     //let attendance = PFObject(className: "Attendance")
                     let attendance = Attendance()
                     
-//                    attendance["Id"] = object.stringValue
-//                    attendance["starttime"] = NSDate()
-//                    attendance["course"] = QRReaderViewController.courseName
+                    //                    attendance["Id"] = object.stringValue
+                    //                    attendance["starttime"] = NSDate()
+                    //                    attendance["course"] = QRReaderViewController.courseName
                     attendance.sID = object.stringValue!
                     AppDelegate.s_id = attendance.sID
                     attendance.date = String(describing: NSDate())
                     attendance.course = QRReaderViewController.courseName
+                    attendance.faculty = QRReaderViewController.facID
                     if object.stringValue != nil {
                         
-                    session.stopRunning()
+                        session.stopRunning()
                     }
                     
                     attendance.saveInBackground(block: { (success, error) -> Void in
                         if success {
                             
                             self.displayOKAlert(title: "Success!", message:"record saved.")
-                           
+                            
                         } else {
                             print(error)
                         }
@@ -104,7 +106,7 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
                     print("before alert")
                     
                     let alert=UIAlertController(title: "QR Code", message: object.stringValue, preferredStyle: .alert)
-                 //   alert.addAction(UIAlertAction(title: "Retake", style: .default, handler: nil))
+                    //   alert.addAction(UIAlertAction(title: "Retake", style: .default, handler: nil))
                     alert.addAction(UIAlertAction(title: "Continue Scanning", style: .default, handler: {(nil) in
                         UIPasteboard.general.string=object.stringValue
                     }))
@@ -112,18 +114,19 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
                     alert.addAction(UIAlertAction(title: "Done!Exit Scanner", style: .default) { (action) -> Void in
                         let viewControllerYouWantToPresent =
                             self.storyboard?.instantiateViewController(withIdentifier: "FacultySummaryViewController")
+                        
                         self.present(viewControllerYouWantToPresent!, animated: true, completion: nil)
-                      //  self.presentViewController(viewControllerYouWantToPresent!, animated: true, completion: nil)
+                        //  self.presentViewController(viewControllerYouWantToPresent!, animated: true, completion: nil)
                     })
-                   // alert.addAction(UIAlertAction(title: "Done", style: .default, handler: {(nil) in
+                    // alert.addAction(UIAlertAction(title: "Done", style: .default, handler: {(nil) in
                     //    UIPasteboard.general.string=object.stringValue
-                  //  }))
+                    //  }))
                     session.startRunning()
                     present(alert,animated: true,completion: nil)
                     
-                
+                    
+                }
             }
-        }
         }
     }
     
@@ -136,21 +139,21 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
     }
     
     
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

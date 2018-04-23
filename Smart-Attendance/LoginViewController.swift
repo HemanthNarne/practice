@@ -29,14 +29,14 @@ class LoginViewController: UIViewController,UIPickerViewDataSource,UIPickerViewD
         return role[row]
     }
     
-
+    
     override func viewDidLoad() {
-       
+        
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -81,38 +81,38 @@ class LoginViewController: UIViewController,UIPickerViewDataSource,UIPickerViewD
     }
     
     func displayOKAlert(title: String, message: String) {
-    
-    let alert = UIAlertController(title: title, message:
-    message, preferredStyle: .alert)
-    alert.addAction(UIAlertAction(title: "OK",
-    style: .default, handler: nil))
+        
+        let alert = UIAlertController(title: title, message:
+            message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK",
+                                      style: .default, handler: nil))
         self.present(alert, animated: true)       
         
-       let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
         let mainStoryboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         print("sid is",userID)
         if selectedRole == "Faculty" {
             let viewController = mainStoryboard.instantiateViewController(withIdentifier: "facultyIdentifier") as! FacultyTableViewController
             
-            //viewController.inputSID = userID
+            viewController.facultyID = userID
             appDelegate.window?.rootViewController = viewController
             
         }
-       else {
+        else {
             let viewController = mainStoryboard.instantiateViewController(withIdentifier: "QRCodeStoryBoard") as! QRCodeGeneratorViewController
-                    viewController.inputSID = userID
-                   appDelegate.window?.rootViewController = viewController
+            viewController.inputSID = userID
+            appDelegate.window?.rootViewController = viewController
             
-         //   let viewController = mainStoryboard.instantiateViewController(withIdentifier: "roleTVC") as! RoleTableViewController
+            //   let viewController = mainStoryboard.instantiateViewController(withIdentifier: "roleTVC") as! RoleTableViewController
             //viewController.inputSID = userID
-           // appDelegate.window?.rootViewController = viewController
+            // appDelegate.window?.rootViewController = viewController
             
         }
-//        let viewController = mainStoryboard.instantiateViewController(withIdentifier: "QRCodeStoryBoard") as! QRCodeGeneratorViewController
-//        viewController.inputSID = userID
-//        appDelegate.window?.rootViewController = viewController
+        //        let viewController = mainStoryboard.instantiateViewController(withIdentifier: "QRCodeStoryBoard") as! QRCodeGeneratorViewController
+        //        viewController.inputSID = userID
+        //        appDelegate.window?.rootViewController = viewController
         
-    
+        
     }
     
     
@@ -123,7 +123,7 @@ class LoginViewController: UIViewController,UIPickerViewDataSource,UIPickerViewD
         alert.addAction(UIAlertAction(title: "OK",
                                       style: .default, handler: nil))
         self.present(alert, animated: true)
-       
+        
         
     }
     
@@ -131,17 +131,17 @@ class LoginViewController: UIViewController,UIPickerViewDataSource,UIPickerViewD
     
     
     
-
     
-
+    
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

@@ -21,6 +21,7 @@ class Attendance:PFObject,PFSubclassing{
     @NSManaged var sID:String
     @NSManaged var date:String
     @NSManaged var course:String
+    @NSManaged var faculty:String
     
     static func parseClassName()->String{
         return "Attendance"
@@ -52,8 +53,8 @@ class CourseRecorder{
         return courses.count
         
     }
-    func addCourseItem(_ food:Course){
-        courses.append(food)
+    func addCourseItem(_ course:Course){
+        courses.append(course)
         
         
     }
