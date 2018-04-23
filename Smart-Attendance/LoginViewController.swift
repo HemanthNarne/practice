@@ -85,6 +85,7 @@ class LoginViewController: UIViewController,UIPickerViewDataSource,UIPickerViewD
         AppDelegate.s_id = sidTF.text!
     }
     
+    //This is responsible for displaying OkAlert
     func displayOKAlert(title: String, message: String) {
         
         let alert = UIAlertController(title: title, message:
