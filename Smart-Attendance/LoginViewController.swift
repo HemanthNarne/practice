@@ -23,6 +23,8 @@ class LoginViewController: UIViewController,UIPickerViewDataSource,UIPickerViewD
         return role.count
     }
     
+    //This funcion is responsible for picker view of selecting row
+
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedRole = role[row]
     }
