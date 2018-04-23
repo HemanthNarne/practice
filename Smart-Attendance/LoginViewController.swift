@@ -46,6 +46,7 @@ class LoginViewController: UIViewController,UIPickerViewDataSource,UIPickerViewD
         // Dispose of any resources that can be recreated.
     }
     
+    //This is responsible for sid textfield
     @IBOutlet weak var sidTF: UITextField!
     
     @IBOutlet weak var passwordTF: UITextField!
