@@ -28,6 +28,7 @@ class LoginViewController: UIViewController,UIPickerViewDataSource,UIPickerViewD
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedRole = role[row]
     }
+    //This funcion is responsible for picker view of title of  row
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return role[row]
     }
