@@ -8,7 +8,7 @@
 
 import UIKit
 import Parse
-
+//
 class LoginViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
     
     
@@ -61,6 +61,7 @@ class LoginViewController: UIViewController,UIPickerViewDataSource,UIPickerViewD
         }
         return true
     }
+    
     
     //The user can login using this function
     @IBAction func login(sender: AnyObject) {
