@@ -4,7 +4,7 @@ Course project for IOS - Smart attendance is an attendance tracking application
 ## Group name
 Conquerors
 
-testing the gdp workshop
+testing the gdp workshop msacs
 
 ## Team members
 
