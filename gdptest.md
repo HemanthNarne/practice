@@ -1,5 +1,5 @@
 ﻿# Smart-Attendance
-Course project for IOS - Smart attendance is an attendance tracking 
+Course project for IOS - Smart attendance is an attendance tracking APPLICATION
 
 ## Group name
 Conquerors
