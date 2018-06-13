@@ -2,6 +2,10 @@
 
 
 Course project for IOS - Smart attendance is an attendance tracking application
+
+
+
+
 Course project for IOS - Smart attendance is an attendance tracking applcationssss
 
 
