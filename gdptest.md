@@ -8,7 +8,7 @@ Course project for IOS - Smart attendance
 
 Course project for IOS - Smart attendance 
 
-Course project for IOS 
+Course project for IOS - Smart attendance
 
 
 
